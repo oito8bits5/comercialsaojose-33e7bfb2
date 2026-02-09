@@ -9,7 +9,7 @@ const allOffers = [
     id: 1,
     name: "Banana Prata",
     originalPrice: 5.99,
-    salePrice: 3.99,
+    salePrice: 4.99,
     discount: 33,
     unit: "kg",
     image: "🍌",
