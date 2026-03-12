@@ -2,8 +2,6 @@ import { motion } from "framer-motion";
 import { Heart, Award, Users, Calendar } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import storeExterior from "@/assets/store-exterior.jpg";
-import teamImage from "@/assets/team.jpg";
 
 const milestones = [
   { year: "2004", title: "Fundação", description: "O Mercadinho São José abre suas portas com apenas 50m²" },
