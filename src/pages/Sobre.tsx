@@ -2,8 +2,6 @@ import { motion } from "framer-motion";
 import { Heart, Award, Users, Calendar } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import storeExterior from "@/assets/store-exterior.jpg";
-import teamImage from "@/assets/team.jpg";
 
 const milestones = [
   { year: "2004", title: "Fundação", description: "O Mercadinho São José abre suas portas com apenas 50m²" },
@@ -47,51 +45,37 @@ const Sobre = () => {
 
         {/* Story */}
         <section className="py-16 bg-background">
-          <div className="container mx-auto px-4">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <motion.div
-                initial={{ opacity: 0, x: -30 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6 }}
-              >
-                <span className="text-accent font-semibold tracking-wider uppercase text-sm">
-                  Nossa História
-                </span>
-                <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mt-2 mb-6">
-                  Uma tradição de família servindo famílias
-                </h2>
-                <div className="space-y-4 text-muted-foreground leading-relaxed">
-                  <p>
-                    O Mercadinho São José nasceu em 2004, fruto do sonho de uma família 
-                    que acreditava em oferecer produtos de qualidade com atendimento 
-                    personalizado para a comunidade.
-                  </p>
-                  <p>
-                    Começamos com uma pequena loja de 50m² e, ao longo dos anos, 
-                    crescemos junto com o bairro. Hoje, contamos com um espaço moderno, 
-                    padaria artesanal própria e uma equipe dedicada.
-                  </p>
-                  <p>
-                    Nosso diferencial sempre foi tratar cada cliente como parte da nossa 
-                    família. Conhecemos nossos clientes pelo nome, sabemos suas preferências 
-                    e nos esforçamos para sempre superar suas expectativas.
-                  </p>
-                </div>
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 0, x: 30 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6 }}
-              >
-                <img
-                  src={storeExterior}
-                  alt="Fachada do Mercadinho São José"
-                  className="rounded-2xl shadow-elevated w-full"
-                />
-              </motion.div>
-            </div>
+          <div className="container mx-auto px-4 max-w-3xl">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <span className="text-accent font-semibold tracking-wider uppercase text-sm">
+                Nossa História
+              </span>
+              <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mt-2 mb-6">
+                Uma tradição de família servindo famílias
+              </h2>
+              <div className="space-y-4 text-muted-foreground leading-relaxed">
+                <p>
+                  O Mercadinho São José nasceu em 2004, fruto do sonho de uma família 
+                  que acreditava em oferecer produtos de qualidade com atendimento 
+                  personalizado para a comunidade.
+                </p>
+                <p>
+                  Começamos com uma pequena loja de 50m² e, ao longo dos anos, 
+                  crescemos junto com o bairro. Hoje, contamos com um espaço moderno, 
+                  padaria artesanal própria e uma equipe dedicada.
+                </p>
+                <p>
+                  Nosso diferencial sempre foi tratar cada cliente como parte da nossa 
+                  família. Conhecemos nossos clientes pelo nome, sabemos suas preferências 
+                  e nos esforçamos para sempre superar suas expectativas.
+                </p>
+              </div>
+            </motion.div>
           </div>
         </section>
 
@@ -168,65 +152,51 @@ const Sobre = () => {
 
         {/* Team */}
         <section className="py-16 bg-background">
-          <div className="container mx-auto px-4">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <motion.div
-                initial={{ opacity: 0, x: -30 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6 }}
-              >
-                <img
-                  src={teamImage}
-                  alt="Equipe do Mercadinho São José"
-                  className="rounded-2xl shadow-elevated w-full"
-                />
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 0, x: 30 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6 }}
-              >
-                <span className="text-accent font-semibold tracking-wider uppercase text-sm">
-                  Nossa Equipe
-                </span>
-                <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mt-2 mb-6">
-                  Pessoas que fazem a diferença
-                </h2>
-                <p className="text-muted-foreground leading-relaxed mb-6">
-                  Nossa equipe é formada por profissionais dedicados que compartilham 
-                  o mesmo compromisso com a excelência no atendimento e a qualidade 
-                  dos produtos.
-                </p>
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-                      <Heart className="w-5 h-5 text-primary" />
-                    </div>
-                    <span className="text-foreground font-medium">Atendimento Caloroso</span>
+          <div className="container mx-auto px-4 max-w-3xl">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <span className="text-accent font-semibold tracking-wider uppercase text-sm">
+                Nossa Equipe
+              </span>
+              <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mt-2 mb-6">
+                Pessoas que fazem a diferença
+              </h2>
+              <p className="text-muted-foreground leading-relaxed mb-6">
+                Nossa equipe é formada por profissionais dedicados que compartilham 
+                o mesmo compromisso com a excelência no atendimento e a qualidade 
+                dos produtos.
+              </p>
+              <div className="grid grid-cols-2 gap-4">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                    <Heart className="w-5 h-5 text-primary" />
                   </div>
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-                      <Award className="w-5 h-5 text-primary" />
-                    </div>
-                    <span className="text-foreground font-medium">Profissionais Capacitados</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-                      <Users className="w-5 h-5 text-primary" />
-                    </div>
-                    <span className="text-foreground font-medium">Trabalho em Equipe</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-                      <Calendar className="w-5 h-5 text-primary" />
-                    </div>
-                    <span className="text-foreground font-medium">Anos de Experiência</span>
-                  </div>
+                  <span className="text-foreground font-medium">Atendimento Caloroso</span>
                 </div>
-              </motion.div>
-            </div>
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                    <Award className="w-5 h-5 text-primary" />
+                  </div>
+                  <span className="text-foreground font-medium">Profissionais Capacitados</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                    <Users className="w-5 h-5 text-primary" />
+                  </div>
+                  <span className="text-foreground font-medium">Trabalho em Equipe</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                    <Calendar className="w-5 h-5 text-primary" />
+                  </div>
+                  <span className="text-foreground font-medium">Anos de Experiência</span>
+                </div>
+              </div>
+            </motion.div>
           </div>
         </section>
       </main>
